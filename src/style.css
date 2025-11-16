@@ -1,0 +1,52 @@
+:root {
+    color-scheme: light dark;
+    background-color: light-dark(#ccc, #222);
+    color: light-dark(#222, #ccc);
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body {
+    display: grid;
+    width: calc(100dvw - 2rem);
+    height: calc(100dvh - 2rem);
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+label {
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+    background-color: light-dark(#eee, #333);
+    display: flex;
+    align-items: center;
+
+    input {
+        appearance: none;
+        border: none;
+        font-size: 1rem;
+        flex-grow: 1;
+        background-color: light-dark(#eee, #333);
+        padding: 0.5rem 0;
+        outline: none;
+    }
+}
+
+output {
+    border: 0.125rem solid light-dark(#000, #fff);
+    height: 100%;
+
+    table {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+
+        td,
+        th {
+            width: 50%;
+        }
+    }
+}

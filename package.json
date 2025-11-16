@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "dev": "bun run src/index.html",
+    "build": "bun build src/index.html --outdir dist/ --minify"
+  }
+}
