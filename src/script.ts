@@ -1,4 +1,4 @@
-import { Parser } from "./parser/parser";
+import { Parser } from "./parser";
 
 const input = document.querySelector("input")!;
 const output = document.querySelector("output")!;
