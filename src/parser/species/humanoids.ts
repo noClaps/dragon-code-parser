@@ -1,5 +1,3 @@
-import { isUppercase } from "../utils";
-
 export const Humanoid = {
   H: "Human",
   Ha: "Ape",
@@ -17,10 +15,6 @@ export const Humanoid = {
   "H?": "Unknown/Anthropomorphic humanoid",
 
   parse(code: string): string {
-    let c = "H";
-    for (let i = 1; i < code.length && !isUppercase(code[i]); i++) {
-      c += code[i];
-    }
-    return Humanoid[c] ?? `<span class="error">Unknown humanoid</span>`;
+    return Humanoid[code] ?? `<span class="error">Unknown humanoid</span>`;
   },
 };

@@ -21,10 +21,10 @@ export const Species = {
   // Spirit = "Q",
   // Undead = "U",
   // Shapechanger = "~",
-};
 
-export function parseSpecies(code: string): string {
-  return Species[code[0]]
-    ? Species[code[0]](code)
-    : `<span class="error">Unknown species</span>`;
-}
+  parse(code: string): string {
+    return Species[code[0]]
+      ? Species[code[0]](code)
+      : `<span class="error">Unknown species</span>`;
+  },
+};

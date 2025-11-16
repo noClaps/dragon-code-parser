@@ -1,10 +1,16 @@
-import { parseSpecies } from "./species";
+import { Species } from "./species";
 
 export class Parser {
   species: string;
 
   constructor(code: string) {
-    this.species = parseSpecies(code);
+    // parse species
+    let c = code[0];
+    for (let i = 1; i < code.length && !isUppercase(code[i]); i++) {
+      c += code[i];
+    }
+    this.species = Species.parse(c);
+    code = code.substring(c.length);
   }
 
   display(): string {
@@ -14,4 +20,11 @@ export class Parser {
 </table>
 `;
   }
+}
+
+export function isUppercase(char: string): boolean {
+  if (char.length != 1) {
+    return false;
+  }
+  return /[A-Z]/.test(char);
 }
