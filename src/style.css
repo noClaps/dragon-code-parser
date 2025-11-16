@@ -1,6 +1,6 @@
 :root {
     color-scheme: light dark;
-    background-color: light-dark(#ccc, #222);
+    background-color: light-dark(#eee, #222);
     color: light-dark(#222, #ccc);
     box-sizing: border-box;
     font-family: system-ui;
@@ -20,7 +20,7 @@ body {
 label {
     border-radius: 0.25rem;
     padding: 0 0.5rem;
-    background-color: light-dark(#eee, #333);
+    background-color: light-dark(#ccc, #333);
     display: flex;
     align-items: center;
 
@@ -29,14 +29,14 @@ label {
         border: none;
         font-size: 1rem;
         flex-grow: 1;
-        background-color: light-dark(#eee, #333);
+        background-color: light-dark(#ccc, #333);
         padding: 0.5rem 0;
         outline: none;
     }
 }
 
 output {
-    border: 0.125rem solid light-dark(#000, #fff);
+    border: 0.125rem solid light-dark(#222, #ccc);
     height: 100%;
 
     table {
