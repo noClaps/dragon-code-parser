@@ -19,6 +19,6 @@ export const Dragon = {
   Dw: "Western Dragon",
 
   parse(code: string): string {
-    return Dragon[code] ?? "ERROR: Unknown dragon";
+    return Dragon[code] ?? `<span class="error">Unknown dragon</span>`;
   },
 };

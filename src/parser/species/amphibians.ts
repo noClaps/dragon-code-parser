@@ -6,6 +6,6 @@ export const Amphibian = {
   At: "Toad",
 
   parse(code: string): string {
-    return Amphibian[code] ?? "ERROR: Unknown amphibian";
+    return Amphibian[code] ?? `<span class="error">Unknown amphibian</span>`;
   },
 };

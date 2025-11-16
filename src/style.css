@@ -50,3 +50,7 @@ output {
         }
     }
 }
+
+.error {
+    color: red;
+}
