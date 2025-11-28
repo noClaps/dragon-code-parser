@@ -4,6 +4,7 @@ import { Crustacean } from "./crustaceans";
 import { Dinosaur } from "./dinosaurs";
 import { Dragon } from "./dragons";
 import { Extraterrestrial } from "./extraterrestrials";
+import { Fish } from "./fish";
 import { Humanoid } from "./humanoids";
 
 export const Species = {
@@ -14,7 +15,7 @@ export const Species = {
   C: Crustacean.parse,
   S: Dinosaur.parse,
   E: Extraterrestrial.parse,
-  // Fish = "F",
+  F: Fish.parse,
   // Insect = "I",
   // Legendary = "L",
   // Mammal = "M",
