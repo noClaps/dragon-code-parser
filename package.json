@@ -1,6 +1,6 @@
 {
   "scripts": {
     "dev": "pnpx rolldown-vite src/",
-    "build": "pnpx rolldown-vite build src/ --outDir dist/ --emptyOutDir"
+    "build": "pnpx rolldown-vite build src/ --outDir ../dist/ --emptyOutDir"
   }
 }
