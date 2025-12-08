@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "pnpx vite src/",
-    "build": "pnpx vite build src/ --outDir ../dist/ --emptyOutDir"
+    "dev": "deno run -A npm:vite src/",
+    "build": "deno run -A npm:vite build src/ --outDir ../dist/ --emptyOutDir"
   }
 }
