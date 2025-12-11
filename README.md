@@ -4,7 +4,7 @@ This is a parser for the dragon code specified at the [Dragon Code Memorial Wiki
 
 ## Build instructions
 
-You'll need [Deno](https://deno.com).
+You'll need [Go](https://go.dev).
 
 Clone the repo:
 
@@ -16,13 +16,7 @@ cd dragon-code-parser
 Run the build script:
 
 ```bash
-deno run build
+go run .
 ```
 
 This will place the built output in the `dist/` directory.
-
-You can also run a dev server with:
-
-```bash
-deno run dev
-```

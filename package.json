@@ -1,6 +1,0 @@
-{
-  "scripts": {
-    "dev": "deno run -A npm:vite src/",
-    "build": "deno run -A npm:vite build src/ --outDir ../dist/ --emptyOutDir --base /dragon-code-parser"
-  }
-}
