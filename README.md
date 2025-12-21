@@ -4,19 +4,19 @@ This is a parser for the dragon code specified at the [Dragon Code Memorial Wiki
 
 ## Build instructions
 
-You'll need [Go](https://go.dev).
+You'll need [Monopack](https://codeberg.org/noClaps/monopack).
 
 Clone the repo:
 
 ```bash
-git clone https://github.com/noClaps/dragon-code-parser.git
+git clone https://codeberg.org/noClaps/dragon-code-parser.git
 cd dragon-code-parser
 ```
 
 Run the build script:
 
 ```bash
-go run .
+monopack src/index.html
 ```
 
 This will place the built output in the `dist/` directory.
