@@ -1,4 +1,7 @@
-export const Humanoid = {
+// @ts-check
+
+/** @type {Record<string, string>} */
+const Humanoid = {
   H: "Human",
   Ha: "Ape",
   Hd: "Dwarf",
@@ -13,8 +16,11 @@ export const Humanoid = {
   Ht: "Troll",
   Hw: "Wolfman",
   "H?": "Unknown/Anthropomorphic humanoid",
-
-  parse(code: string): string {
-    return Humanoid[code] ?? `<span class="error">Unknown humanoid</span>`;
-  },
 };
+
+/**
+ * @param {string} code
+ */
+export default function parse(code) {
+  return Humanoid[code] ?? `<span class="error">Unknown humanoid</span>`;
+}

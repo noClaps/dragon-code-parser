@@ -1,19 +1,25 @@
-import { Species } from "./species";
+// @ts-check
+
+import species from "./species/index.js";
 
 export class Parser {
-  species: string;
+  /** @type {string} */
+  species;
 
-  constructor(code: string) {
+  /**
+   * @param {string} code
+   */
+  constructor(code) {
     // parse species
     let c = code[0];
     for (let i = 1; i < code.length && !isUppercase(code[i]); i++) {
       c += code[i];
     }
-    this.species = Species.parse(c);
+    this.species = species(c);
     code = code.substring(c.length);
   }
 
-  display(): string {
+  display() {
     return `
 <table border="1">
 <tr><th>Species</th><td>${this.species}</td></tr>
@@ -22,7 +28,10 @@ export class Parser {
   }
 }
 
-export function isUppercase(char: string): boolean {
+/**
+ * @param {string} char
+ */
+export function isUppercase(char) {
   if (char.length != 1) {
     return false;
   }

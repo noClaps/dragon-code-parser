@@ -1,4 +1,7 @@
-export const Dragon = {
+// @ts-check
+
+/** @type {Record<string, string>} */
+const Dragon = {
   D: "Dragon",
   Da: "Amphitere",
   Dc: "Draconid",
@@ -17,8 +20,11 @@ export const Dragon = {
   Du: "Pseudodragon",
   Dv: "Wyvern",
   Dw: "Western Dragon",
-
-  parse(code: string): string {
-    return Dragon[code] ?? `<span class="error">Unknown dragon</span>`;
-  },
 };
+
+/**
+ * @param {string} code
+ */
+export default function parse(code) {
+  return Dragon[code] ?? `<span class="error">Unknown dragon</span>`;
+}
